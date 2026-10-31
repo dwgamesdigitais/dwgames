@@ -1,5 +1,26 @@
 $(window).on('load', function () {
 
+    // Adiciona o CSS da Black November dinamicamente
+    $('head').append(`
+      <style>
+        /* Substitui o fundo verde por cinza escuro/preto no bloco de promoções */
+        .promotion, 
+        .promotion .holder-results,
+        .promotion-wrapper {
+          background-color: #151515 !important; 
+          background-image: none !important;
+          border-radius: 12px;
+          border: 1px solid #FF7300; /* Bordinha laranja para dar o clima Black November */
+        }
+
+        /* Muda a cor das etiquetas de desconto de verde para laranja */
+        .discount-tag, .product-flag.discount {
+          background-color: #FF5500 !important;
+          color: #FFFFFF !important;
+        }
+      </style>
+    `);
+
     // Move o banner 2 para dentro do holder-main-banner
     var $target = $('.main-banner .holder-main-banner');
     var $elementToMove = $('section.banner-2.banner_2-3');
@@ -460,30 +481,31 @@ $(window).on('load', function () {
   });
   
   
-  // Função para gerar o HTML igual ao da imagem da central de ofertas DW
+  // Função atualizada para a central de ofertas DW (BLACK NOVEMBER - Borda Tracejada)
   function renderDWPromosHero() {
     return `
-      <section class="dw-promos-hero">
-      <img class="percent-promo" src="https://dwgamesdigitais.github.io/dwgames/assets/banners/percent-promo.png" alt="Porcentagem DW Promo"/>
+      <section class="dw-promos-hero black-november-theme">
+      <img class="percent-promo" src="https://dwgamesdigitais.github.io/dwgames/assets/banners/percent-promo.png" alt="Moeda Verde DW"/>
           <div class="append-promo-content">
         <div>
-          <h1>
-            <img src="https://dwgamesdigitais.github.io/dwgames/assets/banners/dw-promo.svg" alt="Promos da DW">
+          <h1 style="color: #FF7300; font-size: 3rem; font-weight: 900; line-height: 1; margin-bottom: 15px; text-shadow: 2px 2px 10px rgba(255, 115, 0, 0.4);">
+            BLACK NOVEMBER
           </h1>
           <p>
-            Bem-vindo à <span>central de ofertas da DW GAMES</span> — o lugar certo para gamers que querem jogos originais para PS4/PS5 com preço baixo, entrega digital rápida e segurança garantida.
+            O mês mais esperado do ano chegou! Bem-vindo à <span>BLACK NOVEMBER DW GAMES</span> — estoques limitados com o menor preço da história em jogos originais de PS4 e PS5.
           </p>
         </div>
-        <div>
-          <div class="coupon-promo">
-            <span>
-              JOGOS COM ATÉ <span>50% DE DESCONTO</span>
+        <div style="margin: 15px 0;">
+          <!-- Estilo tracejado mantido, cores alteradas para laranja da Black November -->
+          <div class="coupon-promo" style="border: 2px dashed #FF7300; background-color: rgba(0, 0, 0, 0.6); padding: 12px 25px; border-radius: 8px; display: inline-block;">
+            <span style="color: #FFFFFF; font-weight: 700; font-size: 1.1rem; letter-spacing: 0.5px;">
+              JOGOS COM ATÉ <span style="color: #FF7300; font-weight: 900;">80% DE DESCONTO</span>
             </span>
           </div>
         </div>
-        <div>
-          <div>Confira os jogos e aproveite!</div>
-          <div>↓</div>
+        <div style="margin-top: 10px;">
+          <div style="color: #FF7300; font-weight: bold; text-transform: uppercase;">Corra antes que o estoque acabe!</div>
+          <div style="color: #FF7300;">↓</div>
         </div>
         </div>
       </section>
