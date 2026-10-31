@@ -350,14 +350,16 @@ $(window).on('load', function () {
     faqData: faqData
   };
   
-  });
+});
   
   // Adiciona a seção de comparação de preços após .home .collection-6
   // Tente até conseguir
 
   // Definição das variáveis e dados
   const leftImageUrl = 'https://dwgamesdigitais.github.io/dwgames/assets/banners/bfsix.png';
+  const leftImageLink = 'https://www.dwgames.com.br/busca?q=BATTLEFIELD';
   const rightImageUrl = 'https://dwgamesdigitais.github.io/dwgames/assets/banners/crash.jpg';
+  const rightImageLink = 'https://www.dwgames.com.br/busca?q=crash';
   const prices = [
     { value: 'R$ 10', link: '/busca?q=ps&max=10' },
     { value: 'R$ 20', link: '/busca?q=ps&max=20' },
@@ -373,7 +375,9 @@ $(window).on('load', function () {
     return `
       <div class="comparison-container">
         <div class="img-left">
-          <img src="${leftImageUrl}" alt="Super Mario Bros Wonder">
+          <a href="${leftImageLink}">
+            <img src="${leftImageUrl}" alt="Battlefield 6">
+          </a>
         </div>
         <div class="center-content">
           <h3>Compare jogos por faixa de preço</h3>
@@ -388,7 +392,9 @@ $(window).on('load', function () {
           </ul>
         </div>
         <div class="img-right">
-          <img src="${rightImageUrl}" alt="Mortal Kombat 1">
+          <a href="${rightImageLink}">
+            <img src="${rightImageUrl}" alt="Crash Bandicoot 4">
+          </a>
         </div>
       </div>
     `;
