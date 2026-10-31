@@ -1,28 +1,5 @@
 $(window).on('load', function () {
 
-    // --- CSS DA BLACK NOVEMBER (Fundo escuro nos jogos e tags laranjas) ---
-    $('head').append(`
-      <style>
-        /* Aplica o fundo escuro APENAS na caixa/lista dos jogos (que era verde neon) */
-        .promotion ul, 
-        .promotion .showcase,
-        .promotion .products,
-        .promotion .collection-list,
-        .black-november-games-bg {
-          background-color: #111111 !important; 
-          background-image: none !important;
-          border-radius: 12px !important;
-          border: 1px solid #FF7300 !important;
-        }
-
-        /* Muda a cor das etiquetas de desconto (ex: -64%) de verde para laranja */
-        .discount-tag, .product-flag.discount, .flag.discount {
-          background-color: #FF5500 !important;
-          color: #FFFFFF !important;
-        }
-      </style>
-    `);
-
     // Move o banner 2 para dentro do holder-main-banner
     var $target = $('.main-banner .holder-main-banner');
     var $elementToMove = $('section.banner-2.banner_2-3');
@@ -520,9 +497,6 @@ $(window).on('load', function () {
     var $holderResults = $('.promotion .holder-results');
     if ($holderResults.length && $holderResults.find('.dw-promos-hero').length === 0) {
       $holderResults.prepend(renderDWPromosHero());
-      
-      // Adiciona a classe CSS que escurece APENAS a caixa dos jogos
-      $holderResults.find('.dw-promos-hero').next().addClass('black-november-games-bg');
       
     } else if (retries > 0) {
       setTimeout(function() {
