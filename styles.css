@@ -445,6 +445,22 @@ body.dark-mode .collection-14 .product-name {
     grid-template-columns: repeat(var(--products-grid-columns, 2), 1fr);
 }
 
+/* Carrossel de categorias */
+
+/*.c-highlight-content--slide img {
+    max-width: 40px;
+}
+
+.c-highlight-content .--center {
+    gap: 20px;
+}
+
+.c-highlight-content .category-item {
+    padding: 30px;
+    border: 1px solid #ffffff30;
+    border-radius: 6px;
+} */
+
 .products-list > .flex .box-product-wrapper {
 	margin-bottom: 16px;
 }
@@ -568,6 +584,10 @@ body.dark-mode .collection-14 .product-name {
 		margin-right: 130px;
 	}
 
+	/* .splide:not(.splide--ttb) .splide__arrows {
+        top: -50px !important;
+    } */
+
 	.section-header:has(.h-left-container) .header-row.--left:not(.categories) {
 		width: min(100%, 1460px) !important;
 	}
@@ -630,6 +650,7 @@ body.dark-mode .collection-14 .product-name {
 	.splide:not(.splide--ttb) .splide__arrow {
 		background-color: #1c1d20;
 	}
+
 }
 
 @media screen and (min-width: 701px) and (max-width: 1280px) {
@@ -643,49 +664,50 @@ body.dark-mode .collection-14 .product-name {
 
 /* Somente Mobile */
 @media screen and (max-width: 700px) {
+	
 	.header-content {
 		padding-bottom: 12px;
 	}
 	
 	.header-content .holder-search {
-        display: none;
-    }
+    display: none;
+}
 
-    .box-product:not(.-clear) {
-        border-radius: 20px 20px 4px 4px!important;
-    }
+.box-product:not(.-clear) {
+    border-radius: 20px 20px 4px 4px!important;
+}
 
-    .box-product .holder-image img {
-        max-height: fit-content;
-        border-radius: 20px;
-    }
+.box-product .holder-image img {
+	max-height: fit-content;
+    border-radius: 20px;
+}
 
-    .promotion .box-product .holder-image img,
-    .category .box-product .holder-image img {
-        border-radius: 20px;
-    }
+.promotion .box-product .holder-image img,
+.category .box-product .holder-image img {
+    border-radius: 20px;
+}
 
-    .header-content .holder-search.open {
-        display: block;
-    }
+.header-content .holder-search.open {
+    display: block;
+}
 
-    .button-style .buy-button-text-icon svg {
-        display: none;
-    }
+.button-style .buy-button-text-icon svg {
+    display: none;
+}
 
-    .button-style .buy-button-text-icon .text {
-        font-weight: 600 !important;
-        letter-spacing: 0 !important;
-        font-size: 14px !important;
-    }
+.button-style .buy-button-text-icon .text {
+    font-weight: 600 !important;
+    letter-spacing: 0 !important;
+    font-size: 14px !important;
+}
 	
 	.header-content-right .i-s-header {
-        height: 50px;
-        width: 50px;
-        background-color: rgba(255, 255, 255, .05);
-        border: 1px solid rgba(255, 255, 255, .1);
-        border-radius: 6px;
-    }
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, .05);
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 6px;
+}
 
 	.section-header:has(.h-left-container) .header-content-right {
 		gap: 12px;
@@ -828,9 +850,36 @@ body.dark-mode .collection-14 .product-name {
 		text-align: left;
 	}
 
-	div > section:not(.main-banner):not(.category-content):not(.main-product-content):not(.section-pages):not(.section-header) {
+	div
+		> section:not(.main-banner):not(.category-content):not(
+			.main-product-content
+		):not(.section-pages):not(.section-header) {
 		margin-top: 0;
 	}
+
+	/* 
+    #section-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: transform 0.3s ease;
+        z-index: 1000;
+    }
+    
+    #section-header.header-hidden {
+        transform: translateY(-100%);
+        transition-delay: 0.3s;
+      }
+      
+      #section-header.header-visible {
+        transform: translateY(0);
+        transition-delay: 0s; 
+      }
+
+    #app {
+        padding-top: 205px;
+    } */
 }
 
 /* Esconde elementos que serão manipulados até que o JavaScript seja carregado */
@@ -839,12 +888,14 @@ body.dark-mode .collection-14 .product-name {
 	transition: transform 0.3s ease-in-out;
 }
 
+/* Previne CLS inicial */
 .header-hidden,
 .header-visible {
 	will-change: transform;
 }
 
 /* Ajustes produto da listagem */
+
 .box-product:not(.-clear) {
 	position: relative;
 	border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1022,6 +1073,22 @@ body.dark-mode .rkt-header-shopping-page-redirect:after {
 	border-radius: 8px;
 }
 
+/* .main-product-content
+	.holder-variant-button
+	.variant-button:first-child::after {
+	content: 'Jogue em seu perfil';
+	display: block;
+	opacity: 0.6;
+	font-size: 12px;
+}
+
+.main-product-content .holder-variant-button .variant-button:last-child::after {
+	content: 'Jogue em nosso perfil';
+	display: block;
+	opacity: 0.6;
+	font-size: 12px;
+} */
+
 .main-product-content .holder-variant-button .variant-button.selected::before {
 	content: '';
 	width: 24px;
@@ -1034,6 +1101,7 @@ body.dark-mode .rkt-header-shopping-page-redirect:after {
 }
 
 /* Mobile */
+
 @media screen and (max-width: 768px) {
 	section.banner-2.banner_2-3 {
 		margin-top: 50px !important;
@@ -1121,7 +1189,9 @@ body.dark-mode .rkt-header-shopping-page-redirect:after {
 	}
 }
 
+
 /* FAQ */
+
 div#faq-section {
 	max-width: 1440px;
 	margin: 0 auto;
@@ -1204,6 +1274,7 @@ h2.faq-title {
 }
 
 /* BANNER DE PREÇOS */
+
 .comparison-container {
     display: flex;
     max-width: 1472px;
@@ -1249,7 +1320,8 @@ h2.faq-title {
     margin-top: 6px;
 }
 
-/* Página de promoções & Animações do Hero */
+/* Página de promoções */
+
 .promotion .category-content .filters-wrapper {
     display: none;
 }
@@ -1269,6 +1341,7 @@ h2.faq-title {
 .promotion .box-product:not(.-clear) {
     background: #28292B;
 }
+
 
 .promotion .holder-results .flex.-between.-vtop {
     display: none;
@@ -1293,7 +1366,6 @@ h2.faq-title {
     padding: 12px;
     border: 1px dashed #6afa02;
     border-radius: 6px;
-    /* Animação de pulsação removida daqui */
 }
 
 .main_promotion_content-1 {
@@ -1311,92 +1383,60 @@ section.dw-promos-hero {
     gap: 60px;
 }
 
-/* --- ANIMAÇÕES RESTANTES DA SEÇÃO HERO (PROMOÇÕES) --- */
-
-/* 1. Flutuação suave na moeda 3D */
-@keyframes floatAnimation {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-12px); }
-    100% { transform: translateY(0px); }
-}
-
-.dw-promos-hero img.percent-promo {
-    animation: floatAnimation 3s ease-in-out infinite;
-}
-
-/* Título BLACK NOVEMBER sem brilho passante */
-.dw-promos-hero h1 {
-    color: #69FA00;
-    font-size: 3rem;
-    font-weight: 900;
-    line-height: 1;
-    margin-bottom: 15px;
-    text-shadow: 2px 2px 10px rgba(105, 250, 0, 0.4);
-}
-
-/* 4. Salto suave na seta indicativa no rodapé do banner */
-@keyframes bounceArrow {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(6px); }
-    60% { transform: translateY(3px); }
-}
-
-.dw-promos-hero div:last-child div:last-child {
-    animation: bounceArrow 2s infinite;
-}
-
 @media screen and (max-width: 768px) {
-    section.dw-promos-hero > img {
-        max-width: 100px;
-    }
+	
+	
+section.dw-promos-hero > img {
+    max-width: 100px;
+}
 
-    section.dw-promos-hero {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 60px;
-    }
+section.dw-promos-hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 60px;
+}
 
-    .promotion .products-list {
-        padding: 20px;
-        background: #111111 !important;
-    }
+.promotion .products-list {
+    padding: 20px;
+	background: #111111 !important;
+}
 
-    .main_promotion_content-1 {
-        background: url(https://dwgamesdigitais.github.io/dwgames/assets/banners/bg-page-promo-mobile.png) top no-repeat;
-        background-size: 100%;
-    }
+.main_promotion_content-1 {
+    background: url(https://dwgamesdigitais.github.io/dwgames/assets/banners/bg-page-promo-mobile.png) top no-repeat;
+    background-size: 100%;
+}
 
-    .promotion .category-options {
-        display: none;
-    }
+.promotion .category-options {
+	display: none;
+}
 
-    .video .yt-video {
-        flex-direction: column;
-        height: auto;
-        margin: 0;
-        width: 100%;
-        max-height: max-content;
-    }
+.video .yt-video {
+    flex-direction: column;
+    height: auto;
+    margin: 0;
+    width: 100%;
+    max-height: max-content;
+}
 
-    .ctrumble-card {
-        min-height: 400px;
-    }
+.ctrumble-card {
+    min-height: 400px;
+}
 
-    .price-yt-video > div {
-        width: 100%;
-    }
-    
-    .price-yt-video {
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-    }
+.price-yt-video > div {
+    width: 100%;
+}
+.price-yt-video {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
 
-    .comparison-container {
-        flex-direction: column;
-    }
+.comparison-container {
+    flex-direction: column;
+}
+
 }
 
 .rating-total > a {
@@ -1439,6 +1479,7 @@ section.dw-promos-hero {
 }
 
 /* Ajustes na barra de newsletter */
+
 #form-newsletter .btn {
     background: #69FA00;
     border: 0;
@@ -1504,8 +1545,10 @@ section.dw-promos-hero {
 }
 
 /* Vitrine GTA VI */
+
 .grid_collection-7 {
-	background: url(https://cdn.awsli.com.br/2727/2727537/arquivos/gtavi.png) center no-repeat;
+	background: url(https://cdn.awsli.com.br/2727/2727537/arquivos/gtavi.png)
+		center no-repeat;
 	background-size: cover;
 }
 
@@ -1519,7 +1562,10 @@ section.dw-promos-hero {
 	flex: 1;
 }
 
-.grid_collection-7 .section-grid-collection--products .grid-collection-box > .holder-buy-button {
+.grid_collection-7
+	.section-grid-collection--products
+	.grid-collection-box
+	> .holder-buy-button {
 	display: none;
 }
 
@@ -1529,7 +1575,8 @@ section.dw-promos-hero {
 
 .grid_collection-7 .section-grid-collection--text .title-text:before {
 	content: '';
-	background: url(https://cdn.awsli.com.br/2727/2727537/arquivos/gtavilogo.png) center no-repeat;
+	background: url(https://cdn.awsli.com.br/2727/2727537/arquivos/gtavilogo.png)
+		center no-repeat;
 	width: 149px;
 	height: 119px;
 	display: flex;
@@ -1541,6 +1588,7 @@ section.dw-promos-hero {
 }
 
 @media screen and (max-width: 768px) {
+	
 	.grid_collection-7 {
 		margin-top: 60px!important;	
 	}
@@ -1558,9 +1606,12 @@ section.dw-promos-hero {
 	}
 }
 
+
 /* Vitrine FC 27 */
+
 .grid_collection-11 {
-	background: url(https://cdn.awsli.com.br/2727/2727537/arquivos/fc-27.png) center no-repeat;
+	background: url(https://cdn.awsli.com.br/2727/2727537/arquivos/fc-27.png)
+		center no-repeat;
 	background-size: cover;
 }
 
@@ -1574,7 +1625,10 @@ section.dw-promos-hero {
 	flex: 1;
 }
 
-.grid_collection-11 .section-grid-collection--products .grid-collection-box > .holder-buy-button {
+.grid_collection-11
+	.section-grid-collection--products
+	.grid-collection-box
+	> .holder-buy-button {
 	display: none;
 }
 
@@ -1584,7 +1638,8 @@ section.dw-promos-hero {
 
 .grid_collection-11 .section-grid-collection--text .title-text:before {
 	content: '';
-	background: url(https://cdn.awsli.com.br/2727/2727537/arquivos/fc-27-logo.png) center no-repeat;
+	background: url(https://cdn.awsli.com.br/2727/2727537/arquivos/fc-27-logo.png)
+		center no-repeat;
 	width: 220px;
 	height: 50px;
 	display: flex;
@@ -1596,6 +1651,7 @@ section.dw-promos-hero {
 }
 
 @media screen and (max-width: 768px) {
+	
 	.grid_collection-11 {
 		margin-top: 60px!important;	
 	}
@@ -1614,6 +1670,7 @@ section.dw-promos-hero {
 }
 
 /* MENU */
+
 .h-categories-container > div > a {
     display: flex;
     gap: 8px;
@@ -1664,6 +1721,7 @@ section.dw-promos-hero {
 }
 
 /* How it works */
+
 .how-works,
 .how-works * {
     box-sizing: border-box;
@@ -1682,6 +1740,8 @@ section.dw-promos-hero {
    font-family: inherit;
    margin: 20px auto;
 }
+
+/* Títulos */
 
 .how-works .h-title {
     margin-bottom: 56px;
@@ -1709,6 +1769,8 @@ section.dw-promos-hero {
     font-weight: 600;
 }
 
+/* Área do vídeo */
+
 .how-works .h-video {
     min-width: 0;
 }
@@ -1727,6 +1789,8 @@ section.dw-promos-hero {
     display: block;
     border: 0;
 }
+
+/* Área dos passos */
 
 .how-works .h-steps {
     min-width: 0;
@@ -1802,6 +1866,8 @@ section.dw-promos-hero {
     font-style: normal;
 }
 
+/* Tablet */
+
 @media (max-width: 1100px) {
     .how-works {
         grid-template-columns: minmax(0, 1.6fr) minmax(300px, 1fr);
@@ -1829,6 +1895,8 @@ section.dw-promos-hero {
         font-size: 18px;
     }
 }
+
+/* Mobile */
 
 @media (max-width: 767px) {
     .how-works {
