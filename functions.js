@@ -357,7 +357,7 @@ $(window).on('load', function () {
 
   // Definição das variáveis e dados
   const leftImageUrl = 'https://dwgamesdigitais.github.io/dwgames/assets/banners/bfsix.png';
-  const rightImageUrl = 'https://dwgamesdigitais.github.io/dwgames/assets/banners/wwm.png';
+  const rightImageUrl = 'https://dwgamesdigitais.github.io/dwgames/assets/banners/crash.jpg';
   const prices = [
     { value: 'R$ 10', link: '/busca?q=ps&max=10' },
     { value: 'R$ 20', link: '/busca?q=ps&max=20' },
