@@ -1331,7 +1331,8 @@ h2.faq-title {
 }
 
 .promotion .products-list {
-    background: #69FA00;
+    background: #111111 !important;
+	border: 1px solid #FF7300 !important;
     padding: 60px;
     border-radius: 10px;
     margin-bottom: 60px;
@@ -1399,6 +1400,8 @@ section.dw-promos-hero {
 
 .promotion .products-list {
     padding: 20px;
+	background: #111111 !important;
+	border: 1px solid #FF7300 !important;
 }
 
 .main_promotion_content-1 {

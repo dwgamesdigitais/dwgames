@@ -468,7 +468,7 @@ $(window).on('load', function () {
       <img class="percent-promo" src="https://dwgamesdigitais.github.io/dwgames/assets/banners/percent-promo.png" alt="Porcentagem DW Promo" style="filter: hue-rotate(-80deg) saturate(2) brightness(1.2);"/>
           <div class="append-promo-content">
         <div>
-          <h1 style="color: #69FA00; font-size: 3rem; font-weight: 900; line-height: 1; margin-bottom: 15px; text-shadow: 2px 2px 10px rgba(255, 115, 0, 0.4);">
+          <h1 style="color: #FF7300; font-size: 3rem; font-weight: 900; line-height: 1; margin-bottom: 15px; text-shadow: 2px 2px 10px rgba(255, 115, 0, 0.4);">
             BLACK NOVEMBER
           </h1>
           <p>
@@ -477,15 +477,15 @@ $(window).on('load', function () {
         </div>
         <div style="margin: 15px 0;">
           <!-- Estilo tracejado laranja da Black November -->
-          <div class="coupon-promo" style="border: 2px dashed #69FA00; background-color: rgba(0, 0, 0, 0.6); padding: 12px 25px; border-radius: 8px; display: inline-block;">
+          <div class="coupon-promo" style="border: 2px dashed #FF7300; background-color: rgba(0, 0, 0, 0.6); padding: 12px 25px; border-radius: 8px; display: inline-block;">
             <span style="color: #FFFFFF; font-weight: 700; font-size: 1.1rem; letter-spacing: 0.5px;">
-              JOGOS COM ATÉ <span style="color: #69FA00; font-weight: 900;">80% DE DESCONTO</span>
+              JOGOS COM ATÉ <span style="color: #FF7300; font-weight: 900;">80% DE DESCONTO</span>
             </span>
           </div>
         </div>
         <div style="margin-top: 10px;">
-          <div style="color: #69FA00; font-weight: bold; text-transform: uppercase;">Corra antes que o estoque acabe!</div>
-          <div style="color: #69FA00;">↓</div>
+          <div style="color: #FF7300; font-weight: bold; text-transform: uppercase;">Corra antes que o estoque acabe!</div>
+          <div style="color: #FF7300;">↓</div>
         </div>
         </div>
       </section>
