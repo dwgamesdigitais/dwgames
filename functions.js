@@ -460,30 +460,30 @@ $(window).on('load', function () {
   });
   
   
-  // Função para gerar o HTML igual ao da imagem da central de ofertas DW (BLACK NOVEMBER)
+  // Função para gerar o HTML igual ao da imagem da central de ofertas DW
   function renderDWPromosHero() {
     return `
-      <section class="dw-promos-hero black-november-theme">
-      <img class="percent-promo" src="https://dwgamesdigitais.github.io/dwgames/assets/banners/percent-promo.png" alt="Black November DW Promo" style="filter: hue-rotate(170deg) saturate(1.5) brightness(1.2);"/>
+      <section class="dw-promos-hero">
+      <img class="percent-promo" src="https://dwgamesdigitais.github.io/dwgames/assets/banners/percent-promo.png" alt="Porcentagem DW Promo"/>
           <div class="append-promo-content">
         <div>
-          <h1 style="color: #FF7300; font-size: 3rem; font-weight: 900; line-height: 1; margin-bottom: 15px; text-shadow: 2px 2px 10px rgba(255, 115, 0, 0.4);">
-            BLACK NOVEMBER
+          <h1>
+            <img src="https://dwgamesdigitais.github.io/dwgames/assets/banners/dw-promo.svg" alt="Promos da DW">
           </h1>
           <p>
-            O mês mais esperado do ano chegou! Bem-vindo à <span>BLACK NOVEMBER DW GAMES</span> — estoques limitados com o menor preço da história em jogos originais de PS4 e PS5.
+            Bem-vindo à <span>central de ofertas da DW GAMES</span> — o lugar certo para gamers que querem jogos originais para PS4/PS5 com preço baixo, entrega digital rápida e segurança garantida.
           </p>
         </div>
         <div>
-          <div class="coupon-promo" style="background-color: #FF5500; color: #000; border: none; box-shadow: 0px 4px 15px rgba(255, 85, 0, 0.4);">
-            <span style="color: #000; font-weight: 800;">
-              JOGOS COM ATÉ <span style="color: #FFF; font-weight: 900;">80% DE DESCONTO</span>
+          <div class="coupon-promo">
+            <span>
+              JOGOS COM ATÉ <span>50% DE DESCONTO</span>
             </span>
           </div>
         </div>
         <div>
-          <div style="color: #FF7300; font-weight: bold; text-transform: uppercase;">Corra antes que o estoque acabe!</div>
-          <div style="color: #FF7300;">↓</div>
+          <div>Confira os jogos e aproveite!</div>
+          <div>↓</div>
         </div>
         </div>
       </section>
