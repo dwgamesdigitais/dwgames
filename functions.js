@@ -10,69 +10,49 @@ $(window).on('load', function () {
     // Adiciona classe de inicialização
     $('html').addClass('js-initialized');
   
-    // --- Funções Auxiliares ---
-    function inserirSymmFooter() {
-      var $footerSection = $('.holder-footer-section.section-3');
-  
-      if ($footerSection.length && !$footerSection.find('.holder-symm').length) {
-        var $newContent = $('<div>', {
-          'class': 'holder-symm flex',
-          html: '' +
-            '<span>Desenvolvimento</span> ' +
-            '<a href="https://symm.agency/" target="_blank" rel="noreferrer nofollow" class="yampi">' +
-            '  <img src="https://cdn.awsli.com.br/2775/2775575/arquivos/symm.svg" alt="Symm - Agência de Design" width="110" height="24" class="h-va-middle h-inline-block h-ml10 loaded">' +
-            '</a>'
-        });
-  
-        $footerSection.append($newContent);
-        return true;
-      }
-      return false;
-    }
-  
     // --- Criação da Seção de Categorias em Destaque ---
     function criarCategoriesHighlight() {
       // Array com os dados dos jogos (imagens e links)
       var games = [
         {
           name: 'Call of Duty',
-          image: 'https://symmagency.github.io/dwgames/assets/gamescat/cod.png',
+          image: 'https://dwgamesdigitais.github.io/dwgames/assets/gamescat/cod.png',
           alt: 'Call of Duty',
           link: 'https://dwgames.com.br/busca?q=call+of+duty'
         },
         {
           name: 'God of War',
-          image: 'https://symmagency.github.io/dwgames/assets/gamescat/gow.png',
+          image: 'https://dwgamesdigitais.github.io/dwgames/assets/gamescat/gow.png',
           alt: 'God of War',
           link: 'https://dwgames.com.br/busca?q=god+of+war'
         },
         {
           name: 'FC 25',
-          image: 'https://symmagency.github.io/dwgames/assets/gamescat/fc.png',
+          image: 'https://dwgamesdigitais.github.io/dwgames/assets/gamescat/fc.png',
           alt: 'FC 25',
           link: 'https://dwgames.com.br/busca?q=fc+25'
         },
         {
           name: 'Forza',
-          image: 'https://symmagency.github.io/dwgames/assets/gamescat/forza.png',
+          image: 'https://dwgamesdigitais.github.io/dwgames/assets/gamescat/forza.png',
           alt: 'Forza',
           link: 'https://dwgames.com.br/busca?q=forza'
         },
         {
           name: 'Grand Theft Auto',
-          image: 'https://symmagency.github.io/dwgames/assets/gamescat/gta.png',
+          image: 'https://dwgamesdigitais.github.io/dwgames/assets/gamescat/gta.png',
           alt: 'Grand Theft Auto',
           link: 'https://dwgames.com.br/busca?q=grand+theft+auto'
         },
         {
           name: 'UFC',
-          image: 'https://symmagency.github.io/dwgames/assets/gamescat/ufc.png',
+          image: 'https://dwgamesdigitais.github.io/dwgames/assets/gamescat/ufc.png',
           alt: 'UFC',
           link: 'https://dwgames.com.br/busca?q=ufc'
         },
         {
           name: 'Formula 1',
-          image: 'https://symmagency.github.io/dwgames/assets/gamescat/fone.png',
+          image: 'https://dwgamesdigitais.github.io/dwgames/assets/gamescat/fone.png',
           alt: 'Formula 1',
           link: 'https://dwgames.com.br/busca?q=f1'
         }
@@ -121,17 +101,6 @@ $(window).on('load', function () {
         $banner1.insertBefore($mainBanner);
       }
     });
-  
-    // --- Inserção do Footer Symm ---
-    if (!inserirSymmFooter()) {
-      var observer = new MutationObserver(function () {
-        if (inserirSymmFooter()) {
-          observer.disconnect();
-        }
-      });
-  
-      observer.observe(document.body, { childList: true, subtree: true });
-    }
   
     // --- Movimentação de Containers de Especificações (apenas desktop > 701px) ---
     if ($(window).width() > 701) {
@@ -387,8 +356,8 @@ $(window).on('load', function () {
   // Tente até conseguir
 
   // Definição das variáveis e dados
-  const leftImageUrl = 'https://symmagency.github.io/dwgames/assets/banners/bfsix.png';
-  const rightImageUrl = 'https://symmagency.github.io/dwgames/assets/banners/wwm.png';
+  const leftImageUrl = 'https://dwgamesdigitais.github.io/dwgames/assets/banners/bfsix.png';
+  const rightImageUrl = 'https://dwgamesdigitais.github.io/dwgames/assets/banners/wwm.png';
   const prices = [
     { value: 'R$ 10', link: '/busca?q=ps&max=10' },
     { value: 'R$ 20', link: '/busca?q=ps&max=20' },
@@ -489,11 +458,11 @@ $(window).on('load', function () {
   function renderDWPromosHero() {
     return `
       <section class="dw-promos-hero">
-      <img class="percent-promo" src="https://symmagency.github.io/dwgames/assets/banners/percent-promo.png" alt="Porcentagem DW Promo"/>
+      <img class="percent-promo" src="https://dwgamesdigitais.github.io/dwgames/assets/banners/percent-promo.png" alt="Porcentagem DW Promo"/>
           <div class="append-promo-content">
         <div>
           <h1>
-            <img src="https://symmagency.github.io/dwgames/assets/banners/dw-promo.svg" alt="Promos da DW">
+            <img src="https://dwgamesdigitais.github.io/dwgames/assets/banners/dw-promo.svg" alt="Promos da DW">
           </h1>
           <p>
             Bem-vindo à <span>central de ofertas da DW GAMES</span> — o lugar certo para gamers que querem jogos originais para PS4/PS5 com preço baixo, entrega digital rápida e segurança garantida.

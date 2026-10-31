@@ -238,7 +238,7 @@ body.dark-mode:not(.category) input:not([type='checkbox'], [type='radio']) {
     align-items: center;
     justify-content: flex-end;
     padding: 40px;
-    background: url(https://symmagency.github.io/dwgames/assets/banners/yotei-video.png) no-repeat center;
+    background: url(https://dwgamesdigitais.github.io/dwgames/assets/banners/yotei-video.png) no-repeat center;
     background-size: cover;
     border-radius: 10px;
 }
@@ -1368,7 +1368,7 @@ h2.faq-title {
 }
 
 .main_promotion_content-1 {
-    background: url(https://symmagency.github.io/dwgames/assets/banners/bg-page-promo.png) -390px -350px no-repeat;
+    background: url(https://dwgamesdigitais.github.io/dwgames/assets/banners/bg-page-promo.png) -390px -350px no-repeat;
 }
 
 .category-content .holder-results {
@@ -1402,7 +1402,7 @@ section.dw-promos-hero {
 }
 
 .main_promotion_content-1 {
-    background: url(https://symmagency.github.io/dwgames/assets/banners/bg-page-promo-mobile.png) top no-repeat;
+    background: url(https://dwgamesdigitais.github.io/dwgames/assets/banners/bg-page-promo-mobile.png) top no-repeat;
     background-size: 100%;
 }
 
