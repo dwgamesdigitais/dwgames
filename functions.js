@@ -460,32 +460,30 @@ $(window).on('load', function () {
   });
   
   
-  // --- Função modificada para BLACK NOVEMBER (Cupom tracejado + Moeda Laranja) ---
+  // --- Função ORIGINAL revertida (Padrão Verde/Branco Promos DW) ---
   function renderDWPromosHero() {
     return `
-      <section class="dw-promos-hero black-november-theme">
-      <!-- O estilo filter abaixo muda a cor da moeda de verde para laranja vivo -->
-      <img class="percent-promo" src="https://dwgamesdigitais.github.io/dwgames/assets/banners/percent-promo.png" alt="Porcentagem DW Promo" style="filter: hue-rotate(-80deg) saturate(2) brightness(1.2);"/>
+      <section class="dw-promos-hero">
+      <img class="percent-promo" src="https://dwgamesdigitais.github.io/dwgames/assets/banners/percent-promo.png" alt="Porcentagem DW Promo"/>
           <div class="append-promo-content">
         <div>
-          <h1 style="color: #FF7300; font-size: 3rem; font-weight: 900; line-height: 1; margin-bottom: 15px; text-shadow: 2px 2px 10px rgba(255, 115, 0, 0.4);">
-            BLACK NOVEMBER
+          <h1>
+            <img src="https://dwgamesdigitais.github.io/dwgames/assets/banners/dw-promo.svg" alt="Promos da DW">
           </h1>
           <p>
-            O mês mais esperado do ano chegou! Bem-vindo à <span>BLACK NOVEMBER DW GAMES</span> — estoques limitados com o menor preço da história em jogos originais de PS4 e PS5.
+            Bem-vindo à <span>central de ofertas da DW GAMES</span> — o lugar certo para gamers que querem jogos originais para PS4/PS5 com preço baixo, entrega digital rápida e segurança garantida.
           </p>
         </div>
-        <div style="margin: 15px 0;">
-          <!-- Estilo tracejado laranja da Black November -->
-          <div class="coupon-promo" style="border: 2px dashed #FF7300; background-color: rgba(0, 0, 0, 0.6); padding: 12px 25px; border-radius: 8px; display: inline-block;">
-            <span style="color: #FFFFFF; font-weight: 700; font-size: 1.1rem; letter-spacing: 0.5px;">
-              JOGOS COM ATÉ <span style="color: #FF7300; font-weight: 900;">80% DE DESCONTO</span>
+        <div>
+          <div class="coupon-promo">
+            <span>
+              JOGOS COM ATÉ <span>50% DE DESCONTO</span>
             </span>
           </div>
         </div>
-        <div style="margin-top: 10px;">
-          <div style="color: #FF7300; font-weight: bold; text-transform: uppercase;">Corra antes que o estoque acabe!</div>
-          <div style="color: #FF7300;">↓</div>
+        <div>
+          <div>Confira os jogos e aproveite!</div>
+          <div>↓</div>
         </div>
         </div>
       </section>
