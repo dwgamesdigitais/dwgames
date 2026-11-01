@@ -1996,7 +1996,11 @@ section.dw-promos-hero {
     60% { transform: translateY(3px); }
 }
 
+/* Animação somente no texto final e na seta da página de promoções */
+.dw-promos-hero img.percent-promo {
+    animation: none !important;
+}
+
 .dw-promos-hero div:last-child div:last-child {
     animation: bounceArrow 2s infinite;
 }
-
