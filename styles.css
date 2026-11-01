@@ -1981,3 +1981,25 @@ section.dw-promos-hero {
 		grid-template-columns: 1fr;
 	}
 }
+
+/* Animações da página de promoções */
+@keyframes floatAnimation {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.dw-promos-hero img.percent-promo {
+    animation: floatAnimation 3s ease-in-out infinite;
+}
+
+@keyframes bounceArrow {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(6px); }
+    60% { transform: translateY(3px); }
+}
+
+.dw-promos-hero div:last-child div:last-child {
+    animation: bounceArrow 2s infinite;
+}
+
