@@ -1989,9 +1989,6 @@ section.dw-promos-hero {
     100% { transform: translateY(0px); }
 }
 
-.dw-promos-hero img.percent-promo {
-    animation: floatAnimation 3s ease-in-out infinite;
-}
 
 @keyframes bounceArrow {
     0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
