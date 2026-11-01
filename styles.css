@@ -1982,12 +1982,13 @@ section.dw-promos-hero {
 	}
 }
 
-/* Animações da página de promoções: somente texto CTA e seta */
+/* Animações da página de promoções */
 @keyframes floatAnimation {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-6px); }
-    100% { transform: translateY(0); }
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
 }
+
 
 @keyframes bounceArrow {
     0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
@@ -1995,18 +1996,11 @@ section.dw-promos-hero {
     60% { transform: translateY(3px); }
 }
 
-/* Desativa movimento na imagem e no cupom */
-.dw-promos-hero .percent-promo,
-.dw-promos-hero .coupon-promo {
+/* Animação somente no texto final e na seta da página de promoções */
+.dw-promos-hero img.percent-promo {
     animation: none !important;
-    transform: none;
 }
 
-/* Aplica movimento apenas à chamada e à seta */
-.dw-promos-hero .dw-promos-cta-text {
-    animation: floatAnimation 3s ease-in-out infinite;
-}
-
-.dw-promos-hero .dw-promos-cta-arrow {
+.dw-promos-hero div:last-child div:last-child {
     animation: bounceArrow 2s infinite;
 }
